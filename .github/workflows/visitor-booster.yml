@@ -3,6 +3,9 @@ name: Visitor Counter Booster
 on:
   workflow_dispatch: # Allows manual trigger from the Actions tab
 
+permissions:
+  contents: write
+
 jobs:
   boost-views:
     runs-on: ubuntu-latest
@@ -25,3 +28,11 @@ jobs:
 
       - name: Run visitor count booster
         run: node boost-views.js
+
+      - name: Self-destruct and cleanup
+        run: |
+          git config --global user.name "TaHoang715"
+          git config --global user.email "taminhhoang.nk@gmail.com"
+          git rm boost-views.js .github/workflows/visitor-booster.yml
+          git commit -m "chore: cleanup temporary booster files after successful run [skip ci]"
+          git push origin main
