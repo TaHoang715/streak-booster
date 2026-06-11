@@ -43,11 +43,16 @@ jobs:
           git config --global user.name "TaHoang715"
           git config --global user.email "taminhhoang.nk@gmail.com"
           
+          # Chuyển hẳn sang nhánh main và đồng bộ
+          git checkout main
+          git pull origin main
+          
           for i in {1..100}
           do
             echo "--- Đang tạo Pull Request lần $i / 100 ---"
+            
+            # Đảm bảo đang ở main trước khi rẽ nhánh
             git checkout main
-            git pull origin main
             
             # Tạo tên nhánh con ngẫu nhiên
             BRANCH_NAME="mass-patch-$i-$(date +%s)"
@@ -70,15 +75,17 @@ jobs:
             
             echo "Đã tạo PR: $PR_URL"
             
-            # Merge PR và xóa nhánh con
-            gh pr merge --merge --admin --delete-branch
+            # Merge PR bằng URL chính xác (không dùng cờ --admin để tránh lỗi phân quyền)
+            gh pr merge "$PR_URL" --merge --delete-branch
+            
+            # Trở lại nhánh main, xóa nhánh con cục bộ và đồng bộ lại code đã merge
+            git checkout main
+            git branch -D $BRANCH_NAME
+            git pull origin main
             
             # Nghỉ 1 giây tránh giới hạn API
             sleep 1
           done
-          
-          git checkout main
-          git pull origin main
 
       # 3. Vòng lặp tạo 60 Issues giả lập và tự động Đóng để cân đối chỉ số Issues
       - name: Tạo 60 Issues và tự động Đóng
@@ -97,7 +104,7 @@ jobs:
             ISSUE_NUM=$(echo $ISSUE_URL | grep -oE '[0-9]+$')
             
             # Đóng Issue kèm comment
-            gh issue close $ISSUE_NUM --comment "Đã khắc phục lỗi thành công trong bản cập nhật PR $i."
+            gh issue close $ISSUE_NUM --comment "Lỗi đã được khắc phục thành công trong bản cập nhật PR $i."
             
             # Nghỉ 0.5 giây tránh giới hạn API
             sleep 0.5
