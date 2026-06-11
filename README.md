@@ -120,5 +120,5 @@
 <div align="center">
   <samp>PROFILE VISITOR COUNT</samp>
   <br><br>
-  <img src="https://raw.githubusercontent.com/journey-ad/Moe-Counter/master/assets/theme/moebooru/0.gif" alt="0" /><img src="https://raw.githubusercontent.com/journey-ad/Moe-Counter/master/assets/theme/moebooru/0.gif" alt="0" /><img src="https://raw.githubusercontent.com/journey-ad/Moe-Counter/master/assets/theme/moebooru/0.gif" alt="0" /><img src="https://raw.githubusercontent.com/journey-ad/Moe-Counter/master/assets/theme/moebooru/2.gif" alt="2" /><img src="https://raw.githubusercontent.com/journey-ad/Moe-Counter/master/assets/theme/moebooru/5.gif" alt="5" /><img src="https://raw.githubusercontent.com/journey-ad/Moe-Counter/master/assets/theme/moebooru/8.gif" alt="8" /><img src="https://raw.githubusercontent.com/journey-ad/Moe-Counter/master/assets/theme/moebooru/8.gif" alt="8" />
+  <img src="https://count.getloli.com/get/@TaHoang715?theme=moebooru" alt="Moe Counter" />
 </div>
