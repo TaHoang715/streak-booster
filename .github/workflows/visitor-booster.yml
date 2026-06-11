@@ -1,0 +1,32 @@
+name: Visitor Counter Booster
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Run every 30 minutes automatically
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  boost-views:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install playwright
+
+      - name: Install Playwright Chromium Browser
+        run: npx playwright install chromium
+
+      - name: Run visitor count booster
+        run: node boost-views.js
