@@ -76,12 +76,12 @@ jobs:
             echo "Đã tạo PR: $PR_URL"
             
             # Merge PR bằng URL chính xác (không dùng cờ --admin để tránh lỗi phân quyền)
-            gh pr merge "$PR_URL" --merge --delete-branch
+            gh pr merge "$PR_URL" --merge --delete-branch || true
             
             # Trở lại nhánh main, xóa nhánh con cục bộ và đồng bộ lại code đã merge
-            git checkout main
-            git branch -D $BRANCH_NAME
-            git pull origin main
+            git checkout main || true
+            git branch -D $BRANCH_NAME || true
+            git pull origin main || true
             
             # Nghỉ 1 giây tránh giới hạn API
             sleep 1
