@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="50" viewBox="0 0 400 50">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="44" viewBox="0 0 300 44">
   <defs>
     <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0b0f19" />
@@ -48,6 +48,6 @@
       animation: textPulse 2s ease-in-out infinite;
     }
   </style>
-  <rect x="2" y="2" width="396" height="46" rx="23" class="btn-border" />
-  <text x="200" y="25" class="btn-text">CLICK TO REVEAL GIT COMBAT STATS</text>
+  <rect x="2" y="2" width="296" height="40" rx="20" class="btn-border" />
+  <text x="150" y="22" class="btn-text">[ SYSTEM METRICS ]</text>
 </svg>

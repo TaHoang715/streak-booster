@@ -15,8 +15,8 @@
 <div align="center">
 
 <details>
-<summary style="list-style: none; cursor: pointer; outline: none;">
-  <img src="https://raw.githubusercontent.com/TaHoang715/streak-booster/main/button.svg" alt="Click to reveal Git Combat Stats" width="400" />
+<summary style="display: block; list-style: none; cursor: pointer; outline: none;">
+  <img src="https://raw.githubusercontent.com/TaHoang715/streak-booster/main/button.svg" alt="Click to reveal Git Combat Stats" width="300" style="pointer-events: none; cursor: pointer;" />
 </summary>
 <br><br>
 
