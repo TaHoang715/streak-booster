@@ -2,7 +2,7 @@
 
 # ─── ⋆⋅☆⋅⋆ ─── @TaHoang715 ─── ⋆⋅☆⋅⋆ ───
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=2ea44f&center=true&vCenter=true&width=500&lines=Hi+there%2C+I'm+Ta+Minh+Hoang;A+FullStack+Software+Developer;Welcome+to+my+Cyber+Space+..." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=FF3344&center=true&vCenter=true&width=500&lines=Hi+there%2C+I'm+Ta+Minh+Hoang;A+FullStack+Software+Developer;Welcome+to+my+Cyber+Space+..." alt="Typing SVG" />
 
 <br>
 
@@ -16,7 +16,7 @@
 
 <details>
 <summary style="display: block; list-style: none; cursor: pointer; outline: none;">
-  <img src="https://raw.githubusercontent.com/TaHoang715/streak-booster/main/button.svg" alt="Click to reveal Git Combat Stats" width="300" style="pointer-events: none; cursor: pointer;" />
+  <img src="https://raw.githubusercontent.com/TaHoang715/streak-booster/main/button.svg?v=2" alt="Click to reveal Git Combat Stats" width="300" style="pointer-events: none; cursor: pointer;" />
 </summary>
 <br><br>
 
