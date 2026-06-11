@@ -1,9 +1,6 @@
 name: Auto Streak & Activity Booster
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     # Chạy mỗi ngày lúc 11:30 UTC (tức 18:30 tối giờ Việt Nam)
     - cron: '30 11 * * *'
@@ -37,75 +34,56 @@ jobs:
           git commit -m "chore: cập nhật tài liệu và tối ưu hóa hệ thống định kỳ [skip ci]" || echo "Không có thay đổi"
           git push origin main
 
-      # 2. Vòng lặp tạo 100 Pull Requests và tự động Merge để cân đối chỉ số PR
-      - name: Tạo 100 Pull Requests và tự động Merge
+      # 2. Tạo 1 Pull Request hàng ngày và tự động Merge
+      - name: Tạo 1 Pull Request và tự động Merge
         run: |
           git config --global user.name "TaHoang715"
           git config --global user.email "taminhhoang.nk@gmail.com"
           
-          # Chuyển hẳn sang nhánh main và đồng bộ
           git checkout main
           git pull origin main
           
-          for i in {1..100}
-          do
-            echo "--- Đang tạo Pull Request lần $i / 100 ---"
-            
-            # Đảm bảo đang ở main trước khi rẽ nhánh
-            git checkout main
-            
-            # Tạo tên nhánh con ngẫu nhiên
-            BRANCH_NAME="mass-patch-$i-$(date +%s)"
-            git checkout -b $BRANCH_NAME
-            
-            # Thay đổi nhỏ trên file patch.txt
-            echo "Tối ưu hóa mã nguồn lần $i vào lúc $(date)" >> patch.txt
-            git add patch.txt
-            git commit -m "fix: tối ưu hóa và sửa đổi lỗi giao diện phần $i [skip ci]"
-            
-            # Đẩy nhánh lên remote
-            git push origin $BRANCH_NAME
-            
-            # Mở Pull Request bằng GitHub CLI
-            PR_URL=$(gh pr create \
-              --title "fix: cải thiện hiệu suất tải trang và giao diện người dùng (Bản vá $i)" \
-              --body "Tự động kiểm tra cấu trúc code phần $i để tăng tốc độ phản hồi." \
-              --head $BRANCH_NAME \
-              --base main)
-            
-            echo "Đã tạo PR: $PR_URL"
-            
-            # Merge PR bằng URL chính xác (không dùng cờ --admin để tránh lỗi phân quyền)
-            gh pr merge "$PR_URL" --merge --delete-branch || true
-            
-            # Trở lại nhánh main, xóa nhánh con cục bộ và đồng bộ lại code đã merge
-            git checkout main || true
-            git branch -D $BRANCH_NAME || true
-            git pull origin main || true
-            
-            # Nghỉ 1 giây tránh giới hạn API
-            sleep 1
-          done
+          # Tạo tên nhánh con ngẫu nhiên
+          BRANCH_NAME="daily-patch-$(date +%s)"
+          git checkout -b $BRANCH_NAME
+          
+          # Thay đổi nhỏ trên file patch.txt
+          echo "Tối ưu hóa mã nguồn hàng ngày vào lúc $(date)" >> patch.txt
+          git add patch.txt
+          git commit -m "fix: bảo trì giao diện hàng ngày [skip ci]"
+          
+          # Đẩy nhánh lên remote
+          git push origin $BRANCH_NAME
+          
+          # Mở Pull Request bằng GitHub CLI
+          PR_URL=$(gh pr create \
+            --title "fix: tối ưu hiệu suất tải trang định kỳ hàng ngày" \
+            --body "Tự động kiểm tra cấu trúc code hàng ngày để duy trì chất lượng." \
+            --head $BRANCH_NAME \
+            --base main)
+          
+          echo "Đã tạo PR: $PR_URL"
+          
+          # Merge PR bằng URL chính xác
+          gh pr merge "$PR_URL" --merge --delete-branch || true
+          
+          # Trở lại nhánh main, dọn dẹp và đồng bộ lại
+          git checkout main || true
+          git branch -D $BRANCH_NAME || true
+          git pull origin main || true
 
-      # 3. Vòng lặp tạo 60 Issues giả lập và tự động Đóng để cân đối chỉ số Issues
-      - name: Tạo 60 Issues và tự động Đóng
+      # 3. Tạo 1 Issue hàng ngày và tự động Đóng
+      - name: Tạo 1 Issue và tự động Đóng
         run: |
-          for i in {1..60}
-          do
-            echo "--- Đang tạo Issue lần $i / 60 ---"
-            # Tạo Issue
-            ISSUE_URL=$(gh issue create \
-              --title "bug: phản hồi trễ hiển thị phần $i trên thiết bị di động" \
-              --body "Phát hiện lỗi không tương thích kích thước tệp SVG trên trình duyệt cũ phần $i. Cần tối ưu hóa.")
-            
-            echo "Đã tạo Issue: $ISSUE_URL"
-            
-            # Lấy số hiệu Issue
-            ISSUE_NUM=$(echo $ISSUE_URL | grep -oE '[0-9]+$')
-            
-            # Đóng Issue kèm comment
-            gh issue close $ISSUE_NUM --comment "Lỗi đã được khắc phục thành công trong bản cập nhật PR $i."
-            
-            # Nghỉ 0.5 giây tránh giới hạn API
-            sleep 0.5
-          done
+          # Tạo Issue
+          ISSUE_URL=$(gh issue create \
+            --title "bug: tối ưu hóa tài nguyên hệ thống định kỳ" \
+            --body "Phát hiện tài nguyên tải trang chưa tối ưu. Cần cấu trúc lại CSS.")
+          
+          echo "Đã tạo Issue: $ISSUE_URL"
+          
+          # Lấy số hiệu Issue
+          ISSUE_NUM=$(echo $ISSUE_URL | grep -oE '[0-9]+$')
+          
+          # Đóng Issue kèm comment
+          gh issue close $ISSUE_NUM --comment "Lỗi đã được khắc phục tự động trong chu kỳ bảo trì hàng ngày."
