@@ -12,22 +12,26 @@
 
 <br><br>
 
+<div align="center">
+
 <details>
-<summary><b>📂 Click to expand My Combat Stats & Tech Stack</b></summary>
-<br>
+<summary style="cursor: pointer; font-family: 'Fira Code', monospace; color: #2ea44f; font-size: 16px; font-weight: bold; padding: 12px 24px; border: 2px solid #2ea44f; border-radius: 30px; display: inline-block; background: #0b0f19; box-shadow: 0 0 15px rgba(46, 164, 79, 0.3);">
+  📊 [CLICK HERE TO REVEAL MY GIT COMBAT STATS] 📊
+</summary>
+<br><br>
 
 ---
 
 ## <samp>[//] GIT COMBAT STATS</samp>
 
 <!-- Repository Commit Activity Graph -->
-<div style="border: 2px solid #2ea44f; border-radius: 12px; padding: 10px; background: #0b0f19; box-shadow: 0 0 20px rgba(46, 164, 79, 0.25); max-width: 850px; margin-bottom: 20px;">
+<div style="border: 2px solid #2ea44f; border-radius: 12px; padding: 10px; background: #0b0f19; box-shadow: 0 0 20px rgba(46, 164, 79, 0.25); max-width: 850px; margin-bottom: 20px; display: inline-block;">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TaHoang715&theme=react-dark&bg_color=0b0f19&color=2ea44f&line=2ea44f&point=ffffff&area=true&hide_border=true" width="100%" alt="Commit Activity Graph" />
 </div>
 
 <br>
 
-<table border="0" cellpadding="0" cellspacing="0">
+<table border="0" cellpadding="0" cellspacing="0" align="center">
   <tr>
     <!-- GitHub General Stats Card -->
     <td valign="top" align="center">
@@ -50,13 +54,15 @@
   </tr>
 </table>
 
+</details>
+
+</div>
+
 <br>
 
 ---
 
 ## <samp>[//] SYSTEM STACK & TOOLS</samp>
-
-<div align="left">
 
 ### <samp>/* Core & Backend */</samp>
 <p align="left">
@@ -93,8 +99,6 @@
   </a>
 </p>
 
-</div>
-
 <br>
 
 ---
@@ -103,9 +107,9 @@
 
 <p align="center">
   <a href="mailto:taminhhoang.nk@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-  <a href="https://facebook.com" target="_blank">
+  <a href="https://www.facebook.com/ta.minh.hoang.293535" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
   </a>
   <a href="https://discord.com" target="_blank">
@@ -113,19 +117,16 @@
   </a>
 </p>
 
+<br>
+
 <p align="center">
   <i>Thanks for stopping by! Feel free to explore my repositories or reach out for collaboration. 🚀</i>
 </p>
 
-</details>
-
 ---
 
-```csharp
-// Coding Philosophy
-while (alive) {
-    Code();
-    FixBugs();
-    Coffee.Drink();
-}
-```
+<div align="center">
+  <samp>PROFILE VISITOR COUNT</samp>
+  <br><br>
+  <img src="https://count.getloli.com/get/@TaHoang715?theme=moebooru" alt="Moe Counter" />
+</div>
