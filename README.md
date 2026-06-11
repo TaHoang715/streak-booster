@@ -120,5 +120,5 @@
 <div align="center">
   <samp>PROFILE VISITOR COUNT</samp>
   <br><br>
-  <img src="https://count.getloli.com/get/@TaHoang715?theme=moebooru" alt="Moe Counter" />
+  <img src="https://count.getloli.com/get/@TaHoang715?theme=moebooru&v=1" alt="Moe Counter" />
 </div>
