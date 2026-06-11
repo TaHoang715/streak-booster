@@ -15,8 +15,8 @@
 <div align="center">
 
 <details>
-<summary style="cursor: pointer; font-family: 'Fira Code', monospace; color: #2ea44f; font-size: 16px; font-weight: bold; padding: 12px 24px; border: 2px solid #2ea44f; border-radius: 30px; display: inline-block; background: #0b0f19; box-shadow: 0 0 15px rgba(46, 164, 79, 0.3);">
-  📊 [CLICK HERE TO REVEAL MY GIT COMBAT STATS] 📊
+<summary style="list-style: none; cursor: pointer; outline: none;">
+  <img src="button.svg" alt="Click to reveal Git Combat Stats" width="400" />
 </summary>
 <br><br>
 

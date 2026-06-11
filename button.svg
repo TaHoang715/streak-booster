@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="50" viewBox="0 0 400 50">
+  <defs>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes borderFlow {
+      0% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: -30;
+      }
+    }
+    @keyframes glowPulse {
+      0%, 100% {
+        filter: drop-shadow(0 0 2px rgba(46, 164, 79, 0.4));
+      }
+      50% {
+        filter: drop-shadow(0 0 8px rgba(46, 164, 79, 0.8));
+      }
+    }
+    @keyframes textPulse {
+      0%, 100% {
+        fill: #2ea44f;
+      }
+      50% {
+        fill: #5eff8b;
+      }
+    }
+    .btn-border {
+      fill: url(#btnGrad);
+      stroke: #2ea44f;
+      stroke-width: 2;
+      stroke-dasharray: 15 10;
+      animation: borderFlow 1.5s linear infinite, glowPulse 2s ease-in-out infinite;
+    }
+    .btn-text {
+      font-family: 'Fira Code', 'Courier New', Courier, monospace;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      animation: textPulse 2s ease-in-out infinite;
+    }
+  </style>
+  <rect x="2" y="2" width="396" height="46" rx="23" class="btn-border" />
+  <text x="200" y="25" class="btn-text">CLICK TO REVEAL GIT COMBAT STATS</text>
+</svg>
