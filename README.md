@@ -12,54 +12,6 @@
 
 <br><br>
 
-<div align="center">
-
-<details>
-<summary style="display: block; list-style: none; cursor: pointer; outline: none;">
-  <img src="https://raw.githubusercontent.com/TaHoang715/streak-booster/main/button.svg?v=2" alt="Click to reveal Git Combat Stats" width="300" style="pointer-events: none; cursor: pointer;" />
-</summary>
-<br><br>
-
----
-
-## <samp>[//] GIT COMBAT STATS</samp>
-
-<!-- Repository Commit Activity Graph -->
-<div style="border: 2px solid #2ea44f; border-radius: 12px; padding: 10px; background: #0b0f19; box-shadow: 0 0 20px rgba(46, 164, 79, 0.25); max-width: 850px; margin-bottom: 20px; display: inline-block;">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TaHoang715&theme=react-dark&bg_color=0b0f19&color=2ea44f&line=2ea44f&point=ffffff&area=true&hide_border=true" width="100%" alt="Commit Activity Graph" />
-</div>
-
-<br>
-
-<table border="0" cellpadding="0" cellspacing="0" align="center">
-  <tr>
-    <!-- GitHub General Stats Card -->
-    <td valign="top" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=TaHoang715&show_icons=true&theme=dark&icon_color=2ea44f&title_color=2ea44f&text_color=FFFFFF&bg_color=0b0f19&hide_border=true" height="165" alt="GitHub Stats" />
-    </td>
-    <!-- GitHub Streak Card -->
-    <td valign="top" align="center">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=TaHoang715&theme=dark&background=0b0f19&hide_border=true&fire=2ea44f&ring=2ea44f&currStreakLabel=2ea44f&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=9E9E9E&dates=9E9E9E" height="165" alt="GitHub Streak" />
-    </td>
-  </tr>
-  <tr>
-    <!-- Top Languages Card -->
-    <td valign="top" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TaHoang715&layout=compact&theme=dark&icon_color=2ea44f&title_color=2ea44f&text_color=FFFFFF&bg_color=0b0f19&hide_border=true" height="165" alt="Top Languages" />
-    </td>
-    <!-- Top Languages / Interactive GIF -->
-    <td valign="top" align="center">
-      <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eTVoaWd2ZGQxbW5lcGRoeHgwbjhqYW04emNubDV0dGV0emc0cjBzeiZlcD12MV9naWZzX3RlbGF0ZWQmY3Q9Zw/XEgmzMLDhFQAga8umN/giphy.gif" height="165" style="border-radius: 8px; border: 2px solid #2ea44f; box-shadow: 0 0 10px rgba(46, 164, 79, 0.3);" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
-
-</details>
-
-</div>
-
-<br>
-
 ---
 
 ## <samp>[//] SYSTEM STACK & TOOLS</samp>
@@ -98,6 +50,46 @@
     <img src="https://skillicons.dev/icons?i=visualstudio,vscode,git,github&theme=dark" />
   </a>
 </p>
+
+<br>
+
+---
+
+## <samp>[//] GIT COMBAT STATS</samp>
+
+<div align="center">
+
+<!-- Repository Commit Activity Graph -->
+<div style="border: 2px solid #2ea44f; border-radius: 12px; padding: 10px; background: #0b0f19; box-shadow: 0 0 20px rgba(46, 164, 79, 0.25); max-width: 850px; margin-bottom: 20px; display: inline-block;">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TaHoang715&theme=react-dark&bg_color=0b0f19&color=2ea44f&line=2ea44f&point=ffffff&area=true&hide_border=true" width="100%" alt="Commit Activity Graph" />
+</div>
+
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <!-- GitHub General Stats Card -->
+    <td valign="top" align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=TaHoang715&show_icons=true&theme=dark&icon_color=2ea44f&title_color=2ea44f&text_color=FFFFFF&bg_color=0b0f19&hide_border=true" height="165" alt="GitHub Stats" />
+    </td>
+    <!-- GitHub Streak Card -->
+    <td valign="top" align="center">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=TaHoang715&theme=dark&background=0b0f19&hide_border=true&fire=2ea44f&ring=2ea44f&currStreakLabel=2ea44f&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=9E9E9E&dates=9E9E9E" height="165" alt="GitHub Streak" />
+    </td>
+  </tr>
+  <tr>
+    <!-- Top Languages Card -->
+    <td valign="top" align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TaHoang715&layout=compact&theme=dark&icon_color=2ea44f&title_color=2ea44f&text_color=FFFFFF&bg_color=0b0f19&hide_border=true" height="165" alt="Top Languages" />
+    </td>
+    <!-- Top Languages / Interactive GIF -->
+    <td valign="top" align="center">
+      <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eTVoaWd2ZGQxbW5lcGRoeHgwbjhqYW04emNubDV0dGV0emc0cjBzeiZlcD12MV9naWZzX3RlbGF0ZWQmY3Q9Zw/XEgmzMLDhFQAga8umN/giphy.gif" height="165" style="border-radius: 8px; border: 2px solid #2ea44f; box-shadow: 0 0 10px rgba(46, 164, 79, 0.3);" alt="Top Languages" />
+    </td>
+  </tr>
+</table>
+
+</div>
 
 <br>
 
