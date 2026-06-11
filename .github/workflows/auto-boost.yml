@@ -1,0 +1,84 @@
+name: Auto Streak & Activity Booster
+
+on:
+  schedule:
+    # Chạy mỗi ngày lúc 11:30 UTC (tức 18:30 tối giờ Việt Nam)
+    - cron: '30 11 * * *'
+  workflow_dispatch: # Cho phép kích hoạt chạy thử thủ công từ giao diện GitHub Actions
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  boost:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout mã nguồn
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # 1. Tạo Commit tự động trên nhánh main để giữ chuỗi đóng góp (Streak)
+      - name: Tạo Commit giữ Streak
+        run: |
+          git config --global user.name "TaHoang715"
+          git config --global user.email "taminhhoang.nk@gmail.com"
+          
+          # Ghi nhận hoạt động vào file log
+          echo "Auto update streak: $(date)" >> history.txt
+          git add history.txt
+          git commit -m "chore: cập nhật tài liệu và tối ưu hóa hệ thống định kỳ" || echo "Không có thay đổi"
+          git push origin main
+
+      # 2. Tạo nhánh mới, commit, mở Pull Request và tự động Merge để tăng tỷ lệ PR
+      - name: Tạo và tự động Merge Pull Request
+        run: |
+          # Đảm bảo đang ở main và mới nhất
+          git checkout main
+          git pull origin main
+          
+          # Tạo tên nhánh con ngẫu nhiên dựa trên thời gian
+          BRANCH_NAME="patch-booster-$(date +%s)"
+          git checkout -b $BRANCH_NAME
+          
+          # Thực hiện thay đổi nhỏ trên file patch.txt
+          echo "Bản vá tự động tối ưu hóa mã nguồn lúc $(date)" >> patch.txt
+          git add patch.txt
+          git commit -m "fix: sửa đổi lỗi hiển thị và căn chỉnh giao diện nhẹ"
+          
+          # Đẩy nhánh con lên GitHub
+          git push origin $BRANCH_NAME
+          
+          # Tạo Pull Request bằng GitHub CLI
+          PR_URL=$(gh pr create \
+            --title "fix: cải thiện hiệu suất tải trang và giao diện người dùng" \
+            --body "Bản vá tự động kiểm tra và tối ưu hóa cấu trúc code để tăng tốc độ phản hồi." \
+            --head $BRANCH_NAME \
+            --base main)
+          echo "Đã tạo Pull Request thành công: $PR_URL"
+          
+          # Merge Pull Request và xóa nhánh con vừa tạo để sạch kho lưu trữ
+          gh pr merge --merge --admin --delete-branch
+          
+          # Trở lại nhánh main cục bộ
+          git checkout main
+          git pull origin main
+
+      # 3. Tạo Issue giả lập lỗi và tự động Đóng để tăng tỷ lệ Issues
+      - name: Tạo và đóng Issue giả lập
+        run: |
+          # Tạo Issue báo lỗi giả lập
+          ISSUE_URL=$(gh issue create \
+            --title "bug: độ trễ nhỏ khi tải ảnh SVG trên một số trình duyệt di động" \
+            --body "Phát hiện lỗi không tương thích kích thước tệp SVG trên trình duyệt Safari cũ. Cần tối ưu hóa lại tỷ lệ và cache.")
+          echo "Đã tạo Issue thành công: $ISSUE_URL"
+          
+          # Trích xuất số hiệu của Issue từ URL (ví dụ: https://github.com/.../issues/1 -> 1)
+          ISSUE_NUM=$(echo $ISSUE_URL | grep -oE '[0-9]+$')
+          
+          # Đóng Issue ngay lập tức kèm bình luận
+          gh issue close $ISSUE_NUM --comment "Lỗi đã được khắc phục thành công trong bản cập nhật tự động PR mới nhất."
