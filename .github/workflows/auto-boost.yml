@@ -1,6 +1,9 @@
 name: Auto Streak & Activity Booster
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Chạy mỗi ngày lúc 11:30 UTC (tức 18:30 tối giờ Việt Nam)
     - cron: '30 11 * * *'
@@ -31,7 +34,7 @@ jobs:
           # Ghi nhận hoạt động vào file log
           echo "Auto update streak: $(date)" >> history.txt
           git add history.txt
-          git commit -m "chore: cập nhật tài liệu và tối ưu hóa hệ thống định kỳ" || echo "Không có thay đổi"
+          git commit -m "chore: cập nhật tài liệu và tối ưu hóa hệ thống định kỳ [skip ci]" || echo "Không có thay đổi"
           git push origin main
 
       # 2. Tạo nhánh mới, commit, mở Pull Request và tự động Merge để tăng tỷ lệ PR
@@ -48,7 +51,7 @@ jobs:
           # Thực hiện thay đổi nhỏ trên file patch.txt
           echo "Bản vá tự động tối ưu hóa mã nguồn lúc $(date)" >> patch.txt
           git add patch.txt
-          git commit -m "fix: sửa đổi lỗi hiển thị và căn chỉnh giao diện nhẹ"
+          git commit -m "fix: sửa đổi lỗi hiển thị và căn chỉnh giao diện nhẹ [skip ci]"
           
           # Đẩy nhánh con lên GitHub
           git push origin $BRANCH_NAME
