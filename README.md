@@ -67,6 +67,13 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TaHoang715&theme=shades-of-purple&bg_color=0b0f19&color=2ea44f&line=2ea44f&point=ffffff&area=true&hide_border=true&v=1" width="100%" alt="Commit Activity Graph" />
 </div>
 
+<!-- GitHub Trophies -->
+<div style="margin-bottom: 20px;">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=TaHoang715&theme=matrix&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  </a>
+</div>
+
 <br>
 
 <table border="0" cellpadding="0" cellspacing="0" align="center">
