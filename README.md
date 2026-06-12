@@ -70,7 +70,7 @@
 <!-- GitHub Trophies -->
 <div style="margin-bottom: 20px;">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://gh-trophy.cdnsoft.net/?username=TaHoang715&theme=matrix&column=7&margin-w=15&margin-h=15&hide=followers&v=1" alt="GitHub Trophies" />
+    <img src="https://gh-trophy.cdnsoft.net/?username=TaHoang715&theme=matrix&column=4&margin-w=15&margin-h=15&v=2" alt="GitHub Trophies" />
   </a>
 </div>
 
