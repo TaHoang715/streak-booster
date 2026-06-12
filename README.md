@@ -97,19 +97,25 @@
 ## <samp>[//] TERMINAL CONTACTS</samp>
 
 <p align="center">
-  <a href="https://maps.app.goo.gl/yXN8g4Hmx9v58UuJ7" target="_blank">
-    <img src="https://img.shields.io/badge/location-Ho_Chi_Minh_City-00f5d4?style=flat-square&logo=google-maps&logoColor=white&labelColor=21262d" alt="Location" />
-  </a>
   <a href="mailto:taminhhoang.nk@gmail.com">
-    <img src="https://img.shields.io/badge/email-taminhhoang.nk@gmail.com-00f5d4?style=flat-square&logo=gmail&logoColor=white&labelColor=21262d" alt="Email" />
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
   <a href="https://www.facebook.com/ta.min.h.hoang.293535" target="_blank">
-    <img src="https://img.shields.io/badge/facebook-Minh_Hoang-00f5d4?style=flat-square&logo=facebook&logoColor=white&labelColor=21262d" alt="Facebook" />
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
   </a>
   <a href="https://discord.com/users/1327981540738863195" target="_blank">
-    <img src="https://img.shields.io/badge/discord-TaHoang715-00f5d4?style=flat-square&logo=discord&logoColor=white&labelColor=21262d" alt="Discord" />
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
 </p>
+
+<div align="center">
+<samp>
+  ❯ <b>LOC :</b> <a href="https://maps.app.goo.gl/yXN8g4Hmx9v58UuJ7" target="_blank">Ho Chi Minh City, Vietnam</a> <br>
+  ❯ <b>EML :</b> <a href="mailto:taminhhoang.nk@gmail.com">taminhhoang.nk@gmail.com</a> <br>
+  ❯ <b>FB  :</b> <a href="https://www.facebook.com/ta.min.h.hoang.293535" target="_blank">Minh Hoang</a> <br>
+  ❯ <b>DC  :</b> <a href="https://discord.com/users/1327981540738863195" target="_blank">TaHoang715</a>
+</samp>
+</div>
 
 <br>
 
