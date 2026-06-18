@@ -58,25 +58,37 @@
 <br>
 
 ---
+## <samp>[//] ABOUT ME</samp>
+<p align="justify">
+  <samp>
+    ❯ <b>Status:</b> Software Engineering student currently leveling up. <br>
+    ❯ <b>Mission:</b> Crafting efficient software systems and exploring the synergy between hardware and digital logic. <br>
+    ❯ <b>Hobbies:</b> When I'm not debugging or tinkering with hardware, I'm a traveler in the world of <i>Genshin Impact</i> (UID: <code>894252521</code>). <br>
+    ❯ <b>Philosophy:</b> "Initialization complete. Always learning, always building."
+  </samp>
+</p>
+
+<br>
 
 ## <samp>[//] GIT COMBAT STATS</samp>
 
 <div align="center">
 
-<div style="border: 2px solid #2ea44f; border-radius: 12px; padding: 10px; background: #0b0f19; box-shadow: 0 0 20px rgba(46, 164, 79, 0.25); max-width: 850px; margin-bottom: 20px; display: inline-block;">
+<!-- <div style="border: 2px solid #2ea44f; border-radius: 12px; padding: 10px; background: #0b0f19; box-shadow: 0 0 20px rgba(46, 164, 79, 0.25); max-width: 850px; margin-bottom: 20px; display: inline-block;">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TaHoang715&theme=shades-of-purple&bg_color=0b0f19&color=2ea44f&line=2ea44f&point=ffffff&area=true&hide_border=true&v=1" width="100%" alt="Commit Activity Graph" />
-</div>
-
-<!-- GitHub Trophies -->
-<div style="margin-bottom: 20px;">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://gh-trophy.cdnsoft.net/?username=TaHoang715&theme=matrix&column=4&margin-w=15&margin-h=15&v=2" alt="GitHub Trophies" />
-  </a>
-</div>
+</div> -->
 
 <br>
 
 <table border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td colspan="2" align="center">
+      <a href="https://github.com/ryo-ma/github-profile-trophy">
+        <img src="https://gh-trophy.cdnsoft.net/?username=TaHoang715&theme=matrix&column=4&margin-w=15&margin-h=15&v=2" alt="GitHub Trophies" />
+      </a>
+      <br><br>
+    </td>
+  </tr>
   <tr>
     <td valign="top" align="center">
       <img src="https://github-readme-stats.vercel.app/api?username=TaHoang715&show_icons=true&theme=dark&icon_color=2ea44f&title_color=2ea44f&text_color=FFFFFF&bg_color=0b0f19&hide_border=true" height="165" alt="GitHub Stats" />
