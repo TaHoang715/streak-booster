@@ -58,7 +58,6 @@
 <br>
 
 ---
-
 ## <samp>[//] ABOUT ME</samp>
 <p align="justify">
   <samp>
@@ -70,8 +69,6 @@
 </p>
 
 <br>
-
----
 
 ## <samp>[//] FEATURED PROJECTS</samp>
 
@@ -90,12 +87,9 @@
       </div>
     </td>
   </tr>
-  <!-- Add future projects here using the same structure -->
 </table>
 
 <br>
-
----
 
 ## <samp>[//] GIT COMBAT STATS</samp>
 
