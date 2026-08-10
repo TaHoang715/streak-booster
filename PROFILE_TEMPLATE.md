@@ -2,6 +2,9 @@
 
 This guide provides a step-by-step tutorial and copyable template to build a modern, cyberpunk-themed GitHub profile README with dynamic widgets, skill badges, and project showcases.
 
+> [!TIP]
+> **Live Demo**: Want to see how this cyberpunk profile template looks in real action? Check out [@TaHoang715's Live GitHub Profile](https://github.com/TaHoang715)!
+
 ---
 
 ## 🛠️ Step-by-Step Guide
