@@ -8,6 +8,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/TaHoang715/streak-booster?color=gold)](https://github.com/TaHoang715/streak-booster/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/TaHoang715/streak-booster?color=blue)](https://github.com/TaHoang715/streak-booster/network/members)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/TaHoang715/streak-booster/pulls)
+[![Profile Setup Tutorial](https://img.shields.io/badge/Tutorial-Profile_README_Setup-00f5d4.svg)](PROFILE_TUTORIAL.md)
 
 </div>
 
@@ -25,7 +26,7 @@ GitHub Streak Booster is an open-source toolkit designed to maintain your GitHub
 - **Visitor Analytics & Counter**: Automated Playwright runner for dynamic profile view tracking.
 - **Balanced Trophy Matrix**: Pre-configured layout for GitHub Trophies using high-availability community CDN mirrors (`gh-trophy.cdnsoft.net`).
 - **Zero-Dependency Web Dashboard**: Lightweight Node.js server (`server.js`) for heatmap simulation and script generation (`.ps1` / `.sh`).
-- **Profile README Template**: A responsive dark-mode Markdown template with skill badges and dynamic stats widgets.
+- **Profile README Tutorial & Template**: A full step-by-step tutorial ([`PROFILE_TUTORIAL.md`](PROFILE_TUTORIAL.md)) and copyable template ([`PROFILE_TEMPLATE.md`](PROFILE_TEMPLATE.md)).
 
 ---
 
@@ -68,16 +69,12 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
-## Profile Template
+## Profile Tutorial & Template
 
-A ready-to-use profile template is provided in [`PROFILE_TEMPLATE.md`](PROFILE_TEMPLATE.md). It includes:
+Check out our step-by-step setup guide and copyable template:
 
-| Component | Integration Details |
-| :--- | :--- |
-| Header Animation | Typing SVG using `readme-typing-svg` with Audiowide typography |
-| Tech Stack Badges | Clean dark-mode icon sets powered by `skillicons.dev` |
-| Trophy Matrix | 2-row x 4-column layout via `gh-trophy.cdnsoft.net` |
-| Statistics Cards | Dark themed stats & streak widgets via `github-readme-stats` |
+- 📖 **Complete Setup Tutorial**: [`PROFILE_TUTORIAL.md`](PROFILE_TUTORIAL.md)
+- 📄 **Copyable Template Code**: [`PROFILE_TEMPLATE.md`](PROFILE_TEMPLATE.md)
 
 ---
 
@@ -95,13 +92,7 @@ To showcase this project on your personal profile README, include the following 
 
 ## Contributing
 
-Contributions are welcome. To contribute:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/improvement`).
-3. Commit your changes (`git commit -m 'feat: add new feature'`).
-4. Push to the branch (`git push origin feature/improvement`).
-5. Open a Pull Request.
+Contributions are welcome. Check out [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution guidelines.
 
 ---
 
