@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Craft & Streak Booster</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-glow"></div>
+  
+  <div class="container">
+    <header class="header">
+      <div class="logo-title">
+        <span class="cyber-icon">🚀</span>
+        <h1>GitHub Profile Craft & Streak Booster</h1>
+      </div>
+      <p class="subtitle">An open-source dashboard to visualize, customize, and boost your GitHub contribution streak & profile metrics.</p>
+    </header>
+
+    <main class="grid-layout">
+      <!-- Config Panel -->
+      <section class="card config-card">
+        <h2>⚡ Configuration Panel</h2>
+        
+        <form id="boost-form">
+          <div class="form-group">
+            <label for="username">GitHub Username</label>
+            <input type="text" id="username" value="TaHoang715" placeholder="e.g. TaHoang715">
+          </div>
+
+          <div class="form-group">
+            <label for="repo">Target Repository</label>
+            <input type="text" id="repo" value="streak-booster" placeholder="e.g. streak-booster">
+          </div>
+
+          <div class="form-group">
+            <label for="backdate">Backdate Range (Days): <span id="backdate-val">100</span></label>
+            <input type="range" id="backdate" min="10" max="365" value="100">
+          </div>
+
+          <div class="form-group row">
+            <div>
+              <label for="min-commits">Min Commits/Day</label>
+              <input type="number" id="min-commits" min="1" max="10" value="1">
+            </div>
+            <div>
+              <label for="max-commits">Max Commits/Day</label>
+              <input type="number" id="max-commits" min="1" max="20" value="5">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="randomness">Density / Active Days (%): <span id="random-val">85%</span></label>
+            <input type="range" id="randomness" min="10" max="100" value="85">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Generate Boost Script (.ps1)</button>
+        </form>
+        <div id="status-msg" class="status-msg"></div>
+      </section>
+
+      <!-- Heatmap Preview Panel -->
+      <section class="card preview-card">
+        <h2>📊 Live Heatmap Simulation</h2>
+        <p class="card-desc">Simulated 365-day contribution matrix with cyber theme styling.</p>
+        
+        <div id="heatmap-grid" class="heatmap-grid"></div>
+
+        <div class="heatmap-legend">
+          <span>Less</span>
+          <span class="sq sq-0"></span>
+          <span class="sq sq-1"></span>
+          <span class="sq sq-2"></span>
+          <span class="sq sq-3"></span>
+          <span class="sq sq-4"></span>
+          <span>More</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Open Source project by <a href="https://github.com/TaHoang715" target="_blank">@TaHoang715</a> | Released under MIT License</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

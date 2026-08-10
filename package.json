@@ -1,0 +1,25 @@
+{
+  "name": "streak-booster",
+  "version": "1.0.0",
+  "description": "An open-source toolkit & GitHub Actions suite to craft beautiful GitHub profiles, boost activity streaks, and automate visitor stats.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "boost-views": "node boost-views.js"
+  },
+  "keywords": [
+    "github-profile",
+    "streak-booster",
+    "github-stats",
+    "github-actions",
+    "profile-readme",
+    "cyberpunk-theme",
+    "open-source"
+  ],
+  "author": "Ta Minh Hoang (@TaHoang715)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TaHoang715/streak-booster/issues"
+  },
+  "homepage": "https://github.com/TaHoang715/streak-booster#readme"
+}
